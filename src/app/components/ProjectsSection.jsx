@@ -14,15 +14,15 @@ const projectsData = [
     gitUrl: "/",
     previewUrl: "/",
   },
-  {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 2,
+  //   title: "Potography Portfolio Website",
+  //   description: "Project 2 description",
+  //   image: "/images/projects/2.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
   {
     id: 3,
     title: "E-commerce Application",
@@ -34,30 +34,31 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "A.R.I.A",
+    description: "A chatbot that helps answer from given images or pdfs",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All", "AI"],
+    gitUrl: "https://github.com/SiddheshDeshmukh2212/A.R.I.A",
+    previewUrl: "https://ariabot.streamlit.app/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "GestureAI",
+    description: "American Sign Language Dectection Website",
     image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    tag: ["All", "AI"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "AI Pathfinder",
+    description: "An A* visulizer for finding paths",
     image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    // image: "/images/projects/7.png",
+    tag: ["All", "AI"],
+    gitUrl: "https://github.com/SiddheshDeshmukh2212/Pathfinding",
+    previewUrl: "https://github.com/SiddheshDeshmukh2212/Pathfinding/blob/main/images/A-star.gif",
   },
 ];
 
@@ -97,8 +98,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="AI"
+          isSelected={tag === "Ai"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
